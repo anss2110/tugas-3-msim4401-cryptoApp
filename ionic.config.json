@@ -1,0 +1,7 @@
+{
+  "name": "cryptoAppAnanda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
