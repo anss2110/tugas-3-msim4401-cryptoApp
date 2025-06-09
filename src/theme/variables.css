@@ -1,2 +1,67 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+@import "tailwindcss";
+
+@tailwind utilities;
+
+/* Component styles */
+.coin-row {
+  @apply bg-neutral-50 dark:bg-gray-700 shadow;
+}
+
+/* Update text colors for both light and dark modes */
+.rank span.label,
+.coin-name span.label,
+.price span.label {
+  @apply text-gray-700 dark:text-gray-200 block text-xs font-semibold;
+}
+
+.rank span.value,
+.coin-name span.value,
+.price span.value {
+  @apply text-gray-900 dark:text-white block text-3xl font-medium;
+}
+
+/* Layout utilities */
+.outer-wrapper {
+  @apply flex justify-center mb-24;
+}
+
+.content-wrapper {
+  @apply max-w-screen-sm w-full p-0;
+}
+
+.crypto-table {
+  @apply flex flex-col w-full p-0 gap-2;
+}
+
+.coin-row {
+  @apply py-4 px-3 gap-4 rounded-lg;
+}
+
+.rank,
+.coin-name,
+.price {
+  @apply leading-[1.4] text-sm;
+}
+
+.rank br,
+.coin-name br,
+.price br {
+  @apply content-[""] block mb-1;
+}
+
+.rank span.label {
+  @apply text-center;
+}
+
+.rank span.value {
+  @apply text-center;
+}
+
+/* Ionic component overrides */
+
+.ion-margin-bottom {
+  @apply mb-4;
+}
